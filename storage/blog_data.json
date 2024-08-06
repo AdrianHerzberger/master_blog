@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post."
+    },
+    {
+        "id": 3,
+        "auhtor": "Adrian Herzberger",
+        "title": "The book of Ra",
+        "content": "The best book you have ever read"
+    },
+    {
+        "id": 4,
+        "auhtor": "John Doey",
+        "title": "The Masterpice",
+        "content": "Hello World!"
+    }
+]
