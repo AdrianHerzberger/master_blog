@@ -83,6 +83,20 @@ def update(update_id):
 
     return render_template('update.html', post=post)
 
+@app.route('/like/<int:post_id>', methods=['POST'])
+def like(post_id):
+    with open('storage/blog_data.json', 'r') as user_file:
+        blog_posts = json.load(user_file)
+    
+    for post in blog_posts:
+        if post["id"] == post_id:
+            post["likes"] += 1
+            break
+    
+    with open('storage/blog_data.json', 'w') as user_file:
+        json.dump(blog_posts, user_file, indent=4)
+    
+    return redirect(url_for('index'))
 
 def fetch_post_by_id(post_id):
     try:
